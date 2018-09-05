@@ -44,7 +44,7 @@ public class OPS_TC_02_NewSubscriberCreationFloor2GbpsFibreBroadband extends Ext
 
 //        Service plan details
         context.setFiberGuard(FiberGuards.fiberGuardMod.toString());
-        context.setHardware(new String[]{Hardware.NETGEAR_Orbi_RBK40.getHardware(), Hardware.NETGEAR_Nighthawk_X8.getHardware(), Hardware.NETGEAR_Nighthawk_X4S.getHardware()});
+        context.setHardware(new String[]{Hardware.NETGEAR_WAC505.getHardware()});
         context.setOneVoiceAddOnSubscribe(OneVoice.MonthlySubscription.getOneVoiceType());
         context.setOneVoiceAddOnNumber(OneVoice.MonthlyNumberNonDisplay.getOneVoiceType());
         context.setOnsiteInstallation(OnsiteInstall.PerTrip120.getInstallOnsite());

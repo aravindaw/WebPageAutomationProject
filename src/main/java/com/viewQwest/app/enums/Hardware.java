@@ -1,11 +1,9 @@
 package com.viewQwest.app.enums;
 
 public enum Hardware {
-    NETGEAR_R6220_Router("R6220"),
-    NETGEAR_Orbi_RBK40 ("RBK40"),
-    NETGEAR_Nighthawk_X4S("X4S Smart Wi-Fi"),
-    NETGEAR_Nighthawk_X8("X8 Tri-band Wi-Fi"),
-    NETGEAR_Nighthawk_XR500("XR500");
+    NETGEAR_AC220("NETGEAR Orbi WiFi System (RBK40) AC220"),
+    NETGEAR_XR500("NETGEAR Nighthawk Pro Gaming WiFi Router (XR500)"),
+    NETGEAR_WAC505 ("NETGEAR Enterprise-Grade Insight Managed Smart Cloud WiFi (WAC505)");
 
     private String hardware;
 

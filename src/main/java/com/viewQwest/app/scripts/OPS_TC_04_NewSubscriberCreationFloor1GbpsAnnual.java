@@ -45,7 +45,7 @@ public class OPS_TC_04_NewSubscriberCreationFloor1GbpsAnnual extends ExtentTestN
 
 //        Service plan details
         context.setFiberGuard(FiberGuards.fiberGuardHigh.toString());
-        context.setHardware(new String[]{Hardware.NETGEAR_Orbi_RBK40.getHardware(), Hardware.NETGEAR_R6220_Router.getHardware(), Hardware.NETGEAR_Nighthawk_X8.getHardware()});
+        context.setHardware(new String[]{Hardware.NETGEAR_AC220.getHardware()});
         context.setOneVoiceAddOnSubscribe(OneVoice.AnnualSubscription.getOneVoiceType());
         context.setOneVoiceAddOnNumber(OneVoice.MonthlyNumberNonDisplay.getOneVoiceType());
         context.setOnsiteInstallation(OnsiteInstall.PerTrip80.getInstallOnsite());

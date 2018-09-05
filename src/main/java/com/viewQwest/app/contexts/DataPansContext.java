@@ -31,6 +31,15 @@ public class DataPansContext implements context {
     private String frontPage;
     private String backPage;
     private boolean landedPremises;
+    private String planPaymentOptions;
+
+    public String getPlanPaymentOptions() {
+        return planPaymentOptions;
+    }
+
+    public void setPlanPaymentOptions(String planPaymentOptions) {
+        this.planPaymentOptions = planPaymentOptions;
+    }
 
     public boolean isLandedPremises() {
         return landedPremises;

@@ -82,6 +82,11 @@ public class NewSubscriberCreationFloorDocument extends ExtentTestNGITestListene
             logger.info("Click next button");
             wait.until(ExpectedConditions.elementToBeClickable(By.id("next"))).click();
 
+//        Plan Payment Options
+            logger.info("Plan Payment Options: [" + context.getPlanPaymentOptions() + "]");
+            Select planPaymentOptions = new Select(webDriver.findElement(By.className("dropdown1Gbps")));
+            planPaymentOptions.selectByValue(context.getPlanPaymentOptions());
+
 //        ViewQwest service plan page
             logger.info("Select Fibre-Guard type [" + context.getFiberGuard() + "]");
             Select fiberGard = new Select(webDriver.findElement(By.id("fiberGuard")));
@@ -103,8 +108,6 @@ public class NewSubscriberCreationFloorDocument extends ExtentTestNGITestListene
             }
             logger.info("Select onsite installation plan");
             webDriver.findElement(By.xpath("//input[@id='" + context.getOnsiteInstallation() + "']/../ins")).click();
-            logger.info("Select ViewQwest TV Media Player");
-            webDriver.findElement(By.xpath("//input[@id='" + context.getTvPlayer() + "']/../ins")).click();
             if (context.setEnableNetflix(true)) {
                 logger.info("Select Netflix");
                 webDriver.findElement(By.xpath("//input[contains(@name, 'netflix')and contains(@value,'Yes')]")).click();
